@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	double Mult = 1;
+	double multip = 1;
 	int minplu=1;
 	int n;
 	printf_s("n=");
@@ -14,9 +14,9 @@ int main()
 	for(int k = 1; k<n; k++)
 	{
 		double modl = (n - k) / pow(k, k);
-		Mult*= minplu*modl;
+		multip*= minplu*modl;
 		minplu *= -1;
 	}
-	printf_s("Mult=%g", Mult);
+	printf_s("Mult=%g", multip);
 	system("pause");
 }
